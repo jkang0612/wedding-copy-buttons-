@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/groom", "destination": "/groom.html" },
+    { "source": "/bride", "destination": "/bride.html" },
+    { "source": "/g_father", "destination": "/g_father.html" },
+    { "source": "/b_father", "destination": "/b_father.html" }
+  ]
+}
