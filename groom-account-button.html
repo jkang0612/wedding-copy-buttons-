@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>신랑 계좌 복사</title>
+</head>
+<body style="font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+
+  <input type="text" value="110454577088" id="copyTxt" style="position:absolute; left:-9999px;">
+
+  <button onclick="copyText()" style="padding: 12px 24px; font-size: 16px; border-radius: 8px; background: #333; color: #fff; border: none; cursor: pointer;">
+    신랑 계좌 복사
+  </button>
+
+  <script>
+    function copyText() {
+      const input = document.getElementById("copyTxt");
+      input.select();
+      input.setSelectionRange(0, 99999); 
+      document.execCommand("copy");
+      alert("복사되었습니다!");
+    }
+  </script>
+
+</body>
+</html>
